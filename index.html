@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Berechnen Sie kostenlos den ROI Ihrer Photovoltaikanlage mit dem PV-Rechner von Stuckmann Solar - Ihr Partner in OWL" />
+    <meta name="keywords" content="Photovoltaik, Solar, PV-Anlage, Rechner, ROI, Bad Salzuflen, OWL, Stuckmann Solar" />
+    <meta name="author" content="Stuckmann Solar GmbH" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="PV-Ertragsrechner | Stuckmann Solar" />
+    <meta property="og:description" content="Berechnen Sie jetzt kostenlos den Ertrag und ROI Ihrer Photovoltaikanlage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rechner.stuckmann-solar.de" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <title>PV-Ertragsrechner | Stuckmann Solar GmbH</title>
+    
+    <!-- Prevent iframe clickjacking except from allowed domains -->
+    <style>
+      /* Critical CSS for loading state */
+      #root {
+        min-height: 100vh;
+      }
+      .loading-spinner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to bottom, #f9fafb, #ffffff);
+      }
+      .loading-spinner::after {
+        content: '';
+        width: 40px;
+        height: 40px;
+        border: 4px solid #e5e7eb;
+        border-top-color: #F5A623;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-spinner"></div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
