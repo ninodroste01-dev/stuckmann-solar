@@ -13,7 +13,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'self' https://www.stuckmann-solar.de https://stuckmann-solar.de https://*.stuckmannsolar.de;"
+          "value": "frame-ancestors *;"
         },
         {
           "key": "X-Content-Type-Options",
