@@ -18,7 +18,6 @@ export function ResultStep({
     annualSavings,
     totalInvestment,
     paybackPeriod,
-    selfConsumption,
     autarkyRate,
     annualCO2Savings,
     storageKWh,

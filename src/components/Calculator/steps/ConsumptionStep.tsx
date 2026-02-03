@@ -100,11 +100,14 @@ const EXTRA_OPTIONS = [
 export function ConsumptionStep({ 
   value, 
   onChange, 
-  householdSize: initialHouseholdSize = 3,
+  householdSize: _initialHouseholdSize = 3,
   hasPool: initialHasPool = false,
   hasEV: initialHasEV = false,
   hasHeatPump: initialHasHeatPump = false,
 }: ConsumptionStepProps) {
+  // Unused variable - kept for future feature extension
+  void _initialHouseholdSize;
+  
   const [selectedFamilyId, setSelectedFamilyId] = useState<string>('small');
   const [hasPool, setHasPool] = useState(initialHasPool);
   const [hasEV, setHasEV] = useState(initialHasEV);

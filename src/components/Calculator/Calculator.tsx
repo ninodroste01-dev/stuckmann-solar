@@ -180,11 +180,6 @@ export function Calculator() {
           <ResultStep
             result={calculationResult}
             onRequestOffer={handleRequestOffer}
-            roofType={roofType}
-            roofAngle={roofType === 'flachdach' ? 5 : roofAngle}
-            orientation={orientation}
-            roofSize={roofSize}
-            hasStorage={true}
           />
         );
       default:

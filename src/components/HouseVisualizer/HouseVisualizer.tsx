@@ -36,13 +36,17 @@ export function HouseVisualizer({
   roofSize,
   showPanels = true,
   householdSize = 3,
-  hasPool = false,
-  hasEV = false,
-  hasHeatPump = false,
+  hasPool: _hasPool = false,
+  hasEV: _hasEV = false,
+  hasHeatPump: _hasHeatPump = false,
   hasStorage = false,
   energyData,
   showEnergyFlow = false,
 }: HouseVisualizerProps) {
+  // Unused variables - kept for future feature extension
+  void _hasPool;
+  void _hasEV;
+  void _hasHeatPump;
   // Calculate number of panels based on roof size
   const panelCount = useMemo(() => {
     const panelArea = 1.7;

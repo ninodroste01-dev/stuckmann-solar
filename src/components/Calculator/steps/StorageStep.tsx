@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { PV_CONSTANTS } from '../../../utils/calculations';
 
 interface StorageStepProps {
   wantsStorage: boolean;
@@ -24,7 +23,7 @@ const STORAGE_OPTIONS = [
     id: '5kwh',
     size: 5,
     label: 'Huawei Luna 2000',
-    price: PV_CONSTANTS.STORAGE_PRICE_5KWH,
+    price: 3500,
     selfConsumption: 50,
     description: '5 kWh Kapazität',
   },
@@ -32,7 +31,7 @@ const STORAGE_OPTIONS = [
     id: '10kwh',
     size: 10,
     label: 'Huawei Luna 2000',
-    price: PV_CONSTANTS.STORAGE_PRICE_10KWH,
+    price: 5500,
     selfConsumption: 70,
     description: '10 kWh Kapazität',
   },
@@ -40,7 +39,7 @@ const STORAGE_OPTIONS = [
     id: '15kwh',
     size: 15,
     label: 'Huawei Luna 2000',
-    price: PV_CONSTANTS.STORAGE_PRICE_15KWH,
+    price: 7500,
     selfConsumption: 80,
     description: '15 kWh Kapazität',
   },
